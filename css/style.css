@@ -1,0 +1,178 @@
+:root {
+  --color-1: #191c3b;
+  --color-2: #2e2d53;
+  --color-3: #c37007;
+  --color-4: #44476a;
+  --color-5: #f18900;
+}
+
+body {
+  font-family: Poppins;
+}
+
+.calculator {
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 320px;
+  height: 600px;
+  padding-top: 14px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-1);
+}
+
+.texts {
+  width: 100%;
+}
+
+.texts p {
+  margin: 0;
+  padding: 0;
+  font-size: 1.1em;
+  font-weight: 360;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #fff;
+}
+
+.display {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* See display size */
+  /* border: 2px solid #fff; */
+}
+
+.display input {
+  margin: 0 auto;
+  margin-top: 130px;
+  margin-bottom: 30px;
+  width: 90%;
+  height: 50px;
+  text-align: right;
+  border: none;
+  background-color: transparent;
+  font-size: 2.2em;
+  color: #fff;
+}
+
+.buttons {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.btn {
+  border: none;
+}
+
+.btn:hover {
+  background-color: var(--color-4);
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.opr-btn,
+.num-btn {
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.opr-btn {
+  color: white;
+  background-color: var(--color-2);
+}
+
+.btn-eq {
+  background-color: var(--color-3);
+  border-bottom-right-radius: 20px;
+}
+
+.btn-eq:hover {
+  background-color: var(--color-5);
+}
+
+.btn-0 {
+  border-bottom-left-radius: 20px;
+}
+
+.num-btn {
+  color: white;
+  background-color: var(--color-1);
+}
+
+.btn-c {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.btn-del {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.btn-d {
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+.btn-m {
+  grid-area: 1 / 4 / 2 / 5;
+}
+
+.btn-7 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.btn-8 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.btn-9 {
+  grid-area: 2 / 3 / 3 / 4;
+}
+
+.btn-s {
+  grid-area: 2 / 4 / 3 / 5;
+}
+
+.btn-4 {
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.btn-5 {
+  grid-area: 3 / 2 / 4 / 3;
+}
+
+.btn-6 {
+  grid-area: 3 / 3 / 4 / 4;
+}
+
+.btn-a {
+  grid-area: 3 / 4 / 4 / 5;
+}
+
+.btn-1 {
+  grid-area: 4 / 1 / 5 / 2;
+}
+
+.btn-2 {
+  grid-area: 4 / 2 / 5 / 3;
+}
+
+.btn-3 {
+  grid-area: 4 / 3 / 5 / 4;
+}
+
+.btn-eq {
+  grid-area: 4 / 4 / 6 / 5;
+}
+
+.btn-0 {
+  grid-area: 5 / 1 / 6 / 3;
+}
+
+.btn-dot {
+  grid-area: 5 / 3 / 6 / 4;
+}
