@@ -19,21 +19,39 @@
       </div>
       <div class="display">
         <input type="text" id="upper-display" class="upper-display" disabled />
-        <input type="text" id="operator-display" class="operator-display" disabled />
+        <input
+          type="text"
+          id="operator-display"
+          class="operator-display"
+          disabled
+        />
         <input type="text" id="lower-display" class="lower-display" disabled />
-        <input type="text" id="answer-display" class="answer-display" disabled />
+        <input
+          type="text"
+          id="answer-display"
+          class="answer-display"
+          disabled
+        />
       </div>
       <div class="buttons">
-        <button class="btn opr-btn btn-c" id="btn-c" onclick="fncn_ac()">
+        <button class="btn opr-btn btn-c" id="btn-c" onclick="allClear()">
           AC
         </button>
-        <button class="btn opr-btn btn-del" id="btn-del" onclick="fncn_c()">
+        <button class="btn opr-btn btn-del" id="btn-del" onclick="oneClear()">
           C
         </button>
-        <button class="btn opr-btn btn-d" id="btn-d" onclick="fncn_d()">
+        <button
+          class="btn opr-btn btn-d"
+          id="btn-d"
+          onclick="addToFirstValue(); division();"
+        >
           /
         </button>
-        <button class="btn opr-btn btn-m" id="btn-m" onclick="fncn_m()">
+        <button
+          class="btn opr-btn btn-m"
+          id="btn-m"
+          onclick="addToFirstValue(); multiplication();"
+        >
           *
         </button>
 
@@ -46,7 +64,11 @@
         <button class="btn num-btn btn-9" id="btn-9" onclick="fncn9()">
           9
         </button>
-        <button class="btn opr-btn btn-s" id="btn-s" onclick="fncn_s()">
+        <button
+          class="btn opr-btn btn-s"
+          id="btn-s"
+          onclick="addToFirstValue(); subtraction();"
+        >
           -
         </button>
 
@@ -59,7 +81,11 @@
         <button class="btn num-btn btn-6" id="btn-6" onclick="fncn6()">
           6
         </button>
-        <button class="btn opr-btn btn-a" id="btn-a" onclick="fncn_a()">
+        <button
+          class="btn opr-btn btn-a"
+          id="btn-a"
+          onclick="addToFirstValue(); addition();"
+        >
           +
         </button>
 
@@ -72,7 +98,11 @@
         <button class="btn num-btn btn-3" id="btn-3" onclick="fncn3()">
           3
         </button>
-        <button class="btn opr-btn btn-eq" id="btn-eq" onclick="operate()">
+        <button
+          class="btn opr-btn btn-eq"
+          id="btn-eq"
+          onclick="addToSecondValue(); calculate();"
+        >
           =
         </button>
 
