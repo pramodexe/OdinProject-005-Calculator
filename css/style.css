@@ -39,24 +39,26 @@ body {
 }
 
 .display {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: 1fr;
+  gap: 10px;
+  width: 90%;
+  margin: 20px auto;
   /* See display size */
   /* border: 2px solid #fff; */
 }
 
 .display input {
-  margin: 0 auto;
-  margin-top: 130px;
-  margin-bottom: 30px;
-  width: 90%;
+  width: 100%;
   height: 50px;
   text-align: right;
   border: none;
   background-color: transparent;
   font-size: 2.2em;
   color: #fff;
+  /* See input size */
+  /* border: 2px solid #fff; */
 }
 
 .buttons {
